@@ -20,7 +20,7 @@
           <li><a href="#" id="mancuerna">Mancuernas</a></li>
           <li><a href="#" id="barra">Barra</a></li>
           <li><a href="#" id="ball">Pelota</a></li>
-          <li><a href="#" id="cable">Cable</a></li>
+          <li><a href="#" id="cable">Polea</a></li>
           <li><a href="#" id="smith">Máquina Smith</a></li>
         </ul>
       </div>
@@ -32,17 +32,38 @@
               <input type="text" 
                     id="buscador" 
                     class="inputBuscador"
-                    placeholder="Write the exercise"
+                    placeholder="Write a part of the body"
               >
-              <button type="button" class="btn btn-success btn-sm btnStyle" id="btnAbdomen">Abdomen</button>
-              <button type="button" class="btn btn-success btn-sm btnStyle" id="btnGluteo">Glúteos</button>
-              <button type="button" class="btn btn-success btn-sm btnStyle" id="btnBicep">Bíceps</button>
-              <button type="button" class="btn btn-success btn-sm btnStyle" id="btnPecho">Pectorales</button>
-              <button type="button" class="btn btn-success btn-sm btnStyle" id="btnEspalda">Espalda</button>
-              <button type="button" class="btn btn-success btn-sm btnStyle" id="btnCardio">Cardio</button>
+              <ul class="cont-ul">
+                <li class="plan">Plan
+                  <ul class="ul-second">
+                    <li class="diaStyle" id="lun">Lunes</li>
+                    <li class="diaStyle" id="mar">Martes</li>
+                    <li class="diaStyle" id="mier">Miércoles</li>
+                    <li class="diaStyle" id="jue">Jueves</li>
+                    <li class="diaStyle" id="vie">Viernes</li>
+                  </ul>
+                </li>
+                <li id="btnGluteo">Glúteos</li>
+                <li id="btnAbdomen" >Abdomen</li>
+                <li id="btnBicep">Bíceps</li>
+                <li id="btnPecho">Pectorales</li>
+                <li id="btnEspalda">Espalda</li>
+                <li id="btnCardio">Cardio</li>
+              </ul>
             </div>
             <div class="contenido" id="contenido">
-              <img src="./images/Inicio1.png" alt="" class="fondoStyle" id="">
+              <div class="slider">
+                <ul>
+                  <li><img src="./images/Inicio1.png" alt=""  id=""></li>
+                  <li><img src="./images/Inicio4.png" alt=""  id=""></li>
+                  <li><img src="./images/Inicio3.png" alt=""  id=""></li>
+                  <li><img src="./images/Inicio2.png" alt=""  id=""></li>
+
+                </ul>
+              </div>
+              <img src="./images/Plan1.png" alt="" class="fondoStyle" id="">
+              <img src="./images/Plan2.png" alt="" class="fondoStyle" id="">
             </div>
         </div>
     </div>
@@ -59,6 +80,40 @@
             </div>
          </div>
     </template>
+    <template id="lunes">
+      <div class="planStyle"><h1>Lunes</h1></div>
+      <iframe class="videoStyle" width="853" height="480" src="https://www.youtube.com/embed/YcbFnIoZfp8" title="Rutina Para Principiantes (10 MIN) Ejercicios Básicos En Casa" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+      <iframe class="videoStyle" width="853" height="480" src="https://www.youtube.com/embed/JnDu110SBN0?list=PLn7X7_tj-QEe_fUDqwJM6RIOztfV8gugb" title="Día 1 | Entrenamiento en casa" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+      <iframe class="videoStyle" width="853" height="480" src="https://www.youtube.com/embed/5RgiY6XoKeY" title="Estiramiento para Después de Hacer Ejercicio (8 MIN) Para Tener Flexibilidad" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    </template>
+    <template id="martes">
+      <div class="planStyle"><h1>Martes</h1></div>
+      <iframe class="videoStyle" width="853" height="480" src="https://www.youtube.com/embed/8I17t1Sl9C4" title="Rutina Para Principiantes (20 MIN) Ejercicios Básicos En Casa" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+      <iframe class="videoStyle" width="853" height="480" src="https://www.youtube.com/embed/UappDafansA?list=PLn7X7_tj-QEe_fUDqwJM6RIOztfV8gugb" title="Día 2 | Entrenamiento en casa" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+      <iframe class="videoStyle" width="853" height="480" src="https://www.youtube.com/embed/mn_PgxZ-kcQ" title="Rutina de flexibilidad para relajarse después del entrenamiento" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    </template>
+    <template id="miercoles">
+      <div class="planStyle"><h1>Miércoles</h1></div>
+      <iframe class="videoStyle" width="853" height="480" src="https://www.youtube.com/embed/y9-_6xBgJbE" title="Rutina de ejercicio para PRINCIPIANTES En Casa (20 Minutos)  Empieza de cero a hacer ejercicio" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+      <iframe class="videoStyle" width="853" height="480" src="https://www.youtube.com/embed/ChPxeh54ARI?list=PLn7X7_tj-QEe_fUDqwJM6RIOztfV8gugb" title="Día 3 | Entrenamiento en casa" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+      <iframe class="videoStyle" width="853" height="480" src="https://www.youtube.com/embed/5RgiY6XoKeY" title="Estiramiento para Después de Hacer Ejercicio (8 MIN) Para Tener Flexibilidad" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    </template>
+    <template id="jueves">
+      <div class="planStyle"><h1>Jueves</h1></div>
+      <iframe class="videoStyle" width="853" height="480" src="https://www.youtube.com/embed/4mK5Q39jczI" title="Cardio Para Principiantes (20 MIN) Ejercicios Básicos En Casa" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+      <iframe class="videoStyle" width="853" height="480" src="https://www.youtube.com/embed/xudx2gRxj_E?list=PLn7X7_tj-QEe_fUDqwJM6RIOztfV8gugb" title="Día 4 | Entrenamiento en casa" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+      <iframe class="videoStyle" width="853" height="480" src="https://www.youtube.com/embed/mn_PgxZ-kcQ" title="Rutina de flexibilidad para relajarse después del entrenamiento" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    </template>
+    <template id="viernes">
+      <div class="planStyle"><h1>Viernes</h1></div>
+      <iframe class="videoStyle" width="853" height="480" src="https://www.youtube.com/embed/q12mV3CN0JU" title="Ejercicios Para Principiantes En Casa (24 Minutos) Rutina post COVID sin Equipo" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+      <iframe class="videoStyle" width="853" height="480" src="https://www.youtube.com/embed/Q39R7snFrvo?list=PLn7X7_tj-QEe_fUDqwJM6RIOztfV8gugb" title="Día 5 | Entrenamiento en casa" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+      <iframe class="videoStyle" width="853" height="480" src="https://www.youtube.com/embed/5RgiY6XoKeY" title="Estiramiento para Después de Hacer Ejercicio (8 MIN) Para Tener Flexibilidad" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    </template>
+    <template id="plan">
+      <iframe src="http://localhost:5050/#" frameborder="0"></iframe>
+    </template>
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
     <script src="./js/index.js"></script>
   </body>

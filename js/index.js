@@ -13,6 +13,19 @@ const equipCable = document.getElementById('cable')
 const equipBall = document.getElementById('ball')
 const equipBarra = document.getElementById('barra')
 const equipPesa = document.getElementById('mancuerna')
+
+const btnPlan = document.getElementById('plan')
+const btnLun = document.getElementById('lun')
+const btnMar = document.getElementById('mar')
+const btnMier = document.getElementById('mier')
+const btnJue = document.getElementById('jue')
+const btnVie = document.getElementById('vie')
+const lunes = document.querySelector('#lunes').content
+const martes = document.querySelector('#martes').content
+const miercoles = document.querySelector('#miercoles').content
+const jueves = document.querySelector('#jueves').content
+const viernes = document.querySelector('#viernes').content
+
 let exerciseDB = []
 let exerciseAll = []
 
@@ -24,7 +37,7 @@ const loadExerciseDB = () => {
     const options = {
         method: 'GET',
         headers: {
-            'X-RapidAPI-Key': '39151941b2msh98110608fcd8d30p1ea95bjsne3ed49bb7562',
+            'X-RapidAPI-Key': 'b101d35b5cmsh48335a6e7dc3e57p135720jsnc0237058ea8d',
             'X-RapidAPI-Host': 'exercisedb.p.rapidapi.com'
         }
     };
@@ -56,7 +69,7 @@ const creaCards = (exercises) => {
 //Función para buscar por nombre de ejercicio
 btnBuscar.addEventListener('keyup', () => {
     let temp = []
-    temp = exerciseDB.filter(exer => exer.name.toLowerCase().includes(btnBuscar.value.toLowerCase()))
+    temp = exerciseDB.filter(exer => exer.target.toLowerCase().includes(btnBuscar.value.toLowerCase()))
     creaCards(temp)
 }) 
 
@@ -101,7 +114,7 @@ equipBall.addEventListener('click', () => {
     const options = {
         method: 'GET',
         headers: {
-            'X-RapidAPI-Key': '39151941b2msh98110608fcd8d30p1ea95bjsne3ed49bb7562',
+            'X-RapidAPI-Key': 'b101d35b5cmsh48335a6e7dc3e57p135720jsnc0237058ea8d',
             'X-RapidAPI-Host': 'exercisedb.p.rapidapi.com'
         }
     };
@@ -120,7 +133,7 @@ equipCable.addEventListener('click', () => {
     const options = {
         method: 'GET',
         headers: {
-            'X-RapidAPI-Key': '39151941b2msh98110608fcd8d30p1ea95bjsne3ed49bb7562',
+            'X-RapidAPI-Key': 'b101d35b5cmsh48335a6e7dc3e57p135720jsnc0237058ea8d',
             'X-RapidAPI-Host': 'exercisedb.p.rapidapi.com'
         }
     };
@@ -139,7 +152,7 @@ equipBarra.addEventListener('click', () => {
     const options = {
         method: 'GET',
         headers: {
-            'X-RapidAPI-Key': '39151941b2msh98110608fcd8d30p1ea95bjsne3ed49bb7562',
+            'X-RapidAPI-Key': 'b101d35b5cmsh48335a6e7dc3e57p135720jsnc0237058ea8d',
             'X-RapidAPI-Host': 'exercisedb.p.rapidapi.com'
         }
     };
@@ -158,7 +171,7 @@ equipPesa.addEventListener('click', () => {
     const options = {
         method: 'GET',
         headers: {
-            'X-RapidAPI-Key': '39151941b2msh98110608fcd8d30p1ea95bjsne3ed49bb7562',
+            'X-RapidAPI-Key': 'b101d35b5cmsh48335a6e7dc3e57p135720jsnc0237058ea8d',
             'X-RapidAPI-Host': 'exercisedb.p.rapidapi.com'
         }
     };
@@ -177,7 +190,7 @@ equipSmith.addEventListener('click', () => {
     const options = {
         method: 'GET',
         headers: {
-            'X-RapidAPI-Key': '39151941b2msh98110608fcd8d30p1ea95bjsne3ed49bb7562',
+            'X-RapidAPI-Key': 'b101d35b5cmsh48335a6e7dc3e57p135720jsnc0237058ea8d',
             'X-RapidAPI-Host': 'exercisedb.p.rapidapi.com'
         }
     };
@@ -190,5 +203,47 @@ equipSmith.addEventListener('click', () => {
             creaCards(exerciseAll)
         })
         .catch(err => console.error(err));
+})
+
+//Planeacion de videos semanales
+btnLun.addEventListener('click', () => {
+    contenido.innerHTML = ""
+    lunes.querySelector('iframe')
+
+    const clone = lunes.cloneNode(true)
+     fragment.appendChild(clone)
+     contenido.appendChild(fragment)
+})
+btnMar.addEventListener('click', () => {
+    contenido.innerHTML = ""
+    martes.querySelector('iframe')
+
+    const clone = martes.cloneNode(true)
+     fragment.appendChild(clone)
+     contenido.appendChild(fragment)
+})
+btnMier.addEventListener('click', () => {
+    contenido.innerHTML = ""
+    miercoles.querySelector('iframe')
+
+    const clone = miercoles.cloneNode(true)
+     fragment.appendChild(clone)
+     contenido.appendChild(fragment)
+})
+btnJue.addEventListener('click', () => {
+    contenido.innerHTML = ""
+    jueves.querySelector('iframe')
+
+    const clone = jueves.cloneNode(true)
+     fragment.appendChild(clone)
+     contenido.appendChild(fragment)
+})
+btnVie.addEventListener('click', () => {
+    contenido.innerHTML = ""
+    viernes.querySelector('iframe')
+
+    const clone = viernes.cloneNode(true)
+     fragment.appendChild(clone)
+     contenido.appendChild(fragment)
 })
 
